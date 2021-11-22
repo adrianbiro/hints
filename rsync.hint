@@ -1,0 +1,15 @@
+# sudo rsync -aruvlPL --progress --delete adrian_knihy /media/adrian/Extreme\ SSD/
+# rsync -aruvlPL --progress --delete sending_side receiving_site/ 
+# / With a slash to copy just the content of the folder. 
+# Without a slash, it will copy the folder itself.
+# to copy or sync a directory [r]ecursively, 
+# in [a]rchive mode to preserve attributes, 
+# resolving contained soft[l]inks
+# [v]erbose mode,
+# and ignoring already copied files [u]nless newer,
+# use -rauv[L] flag 
+# --delete This tells rsync to delete extraneous files from  
+# the  receiving side  (ones  that  aren’t on the sending side), 
+# but only for the directories that are being synchronized.
+
+
