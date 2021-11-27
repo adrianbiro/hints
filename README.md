@@ -1,4 +1,5 @@
-# deleting-boot-entry-hint
+# Various hints for day-to-day Linux usage.
+### deleting-boot-entry-hint
 Deleting boot entry with efibootmgr 
 * \# - run like sudo;
 * $ - run like a normal user. 
