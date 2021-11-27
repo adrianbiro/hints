@@ -1,0 +1,17 @@
+# to install snap on LMDE4 or Debian 10
+sudo apt install snapd
+sudo snap install core
+# to check the status
+sudo systemctl status snapd
+# to exist from overview just press Q, if the snap is not running then run
+sudo systemctl start snapd
+sudo reboot
+# Probably, the icons of the installed applications are not showing in the system app menu so then run 
+sudo ln -s /etc/profile.d/apps-bin-path.sh /etc/X11/Xsession.d/99snap
+# open this file  /etc/login.defs
+sudo vi /etc/login.defs
+# at the end of the file paste this
+ENV_PATH PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+# save it, then Log out or reset DE
+
+
