@@ -1,4 +1,6 @@
 # to install snap on LMDE4 or Debian 10
+sudo rm /etc/apt/preferences.d/nosnap.pref
+sudo apt update
 sudo apt install snapd
 sudo snap install core
 # to check the status
