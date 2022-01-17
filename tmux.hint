@@ -1,0 +1,30 @@
+start tmux
+	tmux
+comand mode for tmux
+	crtl + b
+start saved session
+	tmux attach
+list session
+	tmux ls
+basic shared session (same account)
+	tmux new-session -s shared
+to attach from different tty
+	tmux attach-session -t shared
+to share session between different accounts from same group
+	tmux -S /path/to/shared_session (eg. in /tmp)
+	chmod 777 /tmp/shared_session
+attach to shared session
+	tmux -S /tmp/shared_session attach
+exit and save session
+	crtrl + b + d
+ to get help
+	ctrl + b + ?
+rename curent window
+	ctrl + b + ,
+create new window
+	ctrl + b + c
+whitching windows
+	ctrl + b + [0-9]
+choose a session from a list
+	ctrl + b + s
+
