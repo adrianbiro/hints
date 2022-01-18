@@ -1,6 +1,6 @@
 # Hints for version of tmux 3.1c, check it by tmux -V
 # the sign "|" in the tab lines means "or"
-sdds
+
 start tmux or exit
 	tmux | exit
 command mode for tmux
