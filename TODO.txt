@@ -1,5 +1,4 @@
 uprac
-označ čo je na čo
-readme a názov
+
 
 

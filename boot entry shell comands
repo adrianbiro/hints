@@ -1,3 +1,0 @@
- # apt install efibootmgr
- $ efibootmgr
- # efibootmgr -b 0004 -B
