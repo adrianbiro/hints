@@ -1,30 +1,61 @@
-start tmux
-	tmux
-comand mode for tmux
+# Hints for version of tmux 3.1c, check it by tmux -V
+# the sign "|" in the tab lines means "or"
+
+start tmux or exit
+	tmux | exit
+command mode for tmux
 	crtl + b
 start saved session
-	tmux attach
+	tmux a | attach
 list session
-	tmux ls
+	tmux ls | list-sessions
+attach to target session
+	tmux attach -t [name or number for selected session]
+choose a session from a list
+	ctrl + b + s
 basic shared session (same account)
 	tmux new-session -s shared
 to attach from different tty
 	tmux attach-session -t shared
-to share session between different accounts from same group
+to share session between different accounts from the same group
 	tmux -S /path/to/shared_session (eg. in /tmp)
 	chmod 777 /tmp/shared_session
-attach to shared session
+attach to the shared session
 	tmux -S /tmp/shared_session attach
-exit and save session
+to rename session (from the session)
+	ctrl + b + $
+exit and save session (detach the current client)
 	crtrl + b + d
- to get help
+to get help
 	ctrl + b + ?
-rename curent window
+rename current window
 	ctrl + b + ,
-create new window
-	ctrl + b + c
-whitching windows
-	ctrl + b + [0-9]
-choose a session from a list
-	ctrl + b + s
-
+create a new window, or kill
+	ctrl + b + c | &
+switching windows by numbers, or relatively to next and previous
+	ctrl + b + [0-9 | n-p ]
+create horizontal or horizontal pane
+	ctrl + b + " | %
+togle between pane layouts
+	ctrl + b + spacebar
+to change the size of panes (hold)
+	ctrl + b +  [arrow keys]
+to kill pane
+	ctrl + b + x
+or just write
+	exit
+to move between panes, or cycle through
+	ctrl + b + [arrow keys | o ]
+convert pane to window
+	ctrl + b + !
+# This is tmux default, to change it
+# (eg. replace default command ctrl + b with ctrl + a, or enable mouse)
+# place your home directory file .tmux.conf Here is my config
+	# Send prefix
+	set-option -g prefix C-a # change prefix from ctrl + b to ctrl + a
+	unbind-key C-a
+	bind-key C-a send-prefix
+	# Mouse mode
+	setw -g mouse on
+	# To reload config
+	bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
