@@ -50,7 +50,7 @@ convert pane to window
 	ctrl + b + !
 # This is tmux default, to change it
 # (eg. replace default command ctrl + b with ctrl + a, or enable mouse)
-# place your home directory file .tmux.conf Here is my config
+# place in your home directory file .tmux.conf Here is my
 	# Send prefix
 	set-option -g prefix C-a # change prefix from ctrl + b to ctrl + a
 	unbind-key C-a
