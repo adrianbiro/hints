@@ -1,0 +1,19 @@
+tar structure
+	tar {create|extract} [options] <name_of_archive> <source file|directory>
+to archive -z gzip_compression -j bzip_compression -c create_archive -v verbose -f file
+	tar -zcvf hints.tar.gz hints/
+to extract -x and decompress -z
+	tar -zxvf hints.tar.gz
+-C relative path names and . to make a backup of the current directory
+	tar cvf -C hint.tar hints/ .
+to move content of directory to another
+	tar -cC /old . | tar -xC /new
+
+
+
+
+
+
+
+
+
