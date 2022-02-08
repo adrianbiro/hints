@@ -1,0 +1,29 @@
+# https://virtualenv.pypa.io/en/stable/cli_interface.html
+#install
+	pip install virtualenv
+	zypper install python3-virtualenv
+# projek
+	virtualenv meno_projektu
+# help
+	virtualenv --help
+# activate
+	source meno_projektu/bin/activate
+# deactivate
+	deactivate
+# dependencies
+	pip freeze --local > requirements.txt
+# verziu
+	virtualenv -p /use/bin/python3.6 name_of_project
+# install dependencies
+	pip install -r requirements.txt
+
+
+
+
+
+
+
+
+
+
+
