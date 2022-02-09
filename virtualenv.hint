@@ -16,7 +16,8 @@
 	virtualenv -p /use/bin/python3.6 name_of_project
 # install dependencies
 	pip install -r requirements.txt
-
+# menej moznosti ale uz je dnu venv
+	python3 -m venv meno_projektu
 
 
 
