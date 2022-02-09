@@ -1,4 +1,5 @@
 # https://virtualenv.pypa.io/en/stable/cli_interface.html
+# https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-virtual-environments
 #install
 	pip install virtualenv
 	zypper install python3-virtualenv
@@ -16,11 +17,15 @@
 	virtualenv -p /use/bin/python3.6 name_of_project
 # install dependencies
 	pip install -r requirements.txt
-# menej moznosti ale uz je dnu venv
+# menej moznosti ale uz je v pythone3.3+ venv
 	python3 -m venv meno_projektu
-
-
-
+#! pozor konvencia je pomenovat to venv, meno_projektu je tu na oddelenie
+# das to do dir projektu, aj ked generujes requirements tak ich da do dir
+# v ktorom je venv a nie do venv
+# venv s pristupom k system packages
+	python3 -m venv venv --system-site-packages
+# list local
+	pip list --local
 
 
 
