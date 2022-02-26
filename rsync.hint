@@ -1,4 +1,7 @@
 # sudo rsync -rauvlPL --progress --delete adrian_knihy /media/adrian/Extreme\ SSD/
+#
+# sudo rsync -rauvlPL --progress --delete adrian_knihy /mnt/mydisk/
+#
 # rsync -aruvlPL --progress --delete sending_side receiving_site/ 
 # / With a slash to copy just the content of the folder. 
 # Without a slash, it will copy the folder itself.
